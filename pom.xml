@@ -83,13 +83,44 @@
         </execution>
     </executions>
  </plugin>
+ </plugin>
+		<settings>
+                    <pluginGroups>
+                       <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+                    </pluginGroups>
+                    <profiles>
+                      <profile>
+                         <id>sonar</id>
+                         <activation>
+                            <activeByDefault>true</activeByDefault>
+                         </activation>
+                         <properties>
+                             <!-- Optional URL to server. Default value is http://65.0.134.243:9000 -->
+                             <http://65.0.134.243:9000>
+                                http://http://65.0.134.243:9000
+                           </http://65.0.134.243:9000>
+               </properties>
+           </profile>
+      </profiles>
+</settings>
 				 
 				
 				
 		         
 	         </plugins> 
 	    </build>
-      </project>         
+                 <build>
+                  <pluginManagement>
+                    <plugins>
+                       <plugin>
+                 <groupId>org.sonarsource.scanner.maven</groupId>
+                 <artifactId>sonar-maven-plugin</artifactId>
+                 <version>8.9.10 </version>
+            </plugin>
+         </plugins>
+       </pluginManagement>
+    </build>
+  </project>         
 		         
 	     
 	 
