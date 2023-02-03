@@ -56,10 +56,31 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<groupId>org.jacoco</groupId>
-		<artifactId>jacoco-maven-plugin</artifactId>
-		<plugin>
-		</plugin>
-		<version>0.7.9</version>
-	</build>
-</project>
+		         <groupId>org.jacoco</groupId>
+		         <artifactId>jacoco-maven-plugin</artifactId>
+		         <version>0.7.9</version>
+		         <executions>
+				 <executions>
+					 <id>enforce-java</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireJavaVersion>
+									<version>[1.8,)</version>
+								</requireJavaVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+		         </plugins>
+	         </plugins> 
+	    </build>
+      </project>         
+		         
+	     
+	 
+	               
+
+
