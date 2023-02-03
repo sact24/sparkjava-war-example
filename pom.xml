@@ -60,7 +60,7 @@
 		         <artifactId>jacoco-maven-plugin</artifactId>
 		         <version>0.7.9</version>
 		         <executions>
-				 <executions>
+				 <execution>
 					 <id>enforce-java</id>
 						<goals>
 							<goal>enforce</goal>
