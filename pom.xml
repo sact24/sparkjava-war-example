@@ -99,10 +99,10 @@
                              <http://65.0.134.243:9000>
                                 http://http://65.0.134.243:9000
                            </http://65.0.134.243:9000>
-               </properties>
-           </profile>
-      </profiles>
-</settings>
+                  </properties>
+                </profile>
+            </profiles>
+       </settings>
 				 
 				
 				
