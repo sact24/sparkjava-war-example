@@ -55,15 +55,14 @@
 					</execution>
 				</executions>
 			</plugin>
-		</plugins>
-		         <groupId>org.jacoco</groupId>
-		         <artifactId>jacoco-maven-plugin</artifactId>
-		<plugin>
-		   <plugins>
-		         <version>0.7.9</version>
-		         <executions>
-				 <execution>
-					</execution>
+		        </plugin>
+		          <groupId>org.jacoco</groupId>
+                          <artifactId>jacoco-maven-plugin</artifactId>
+                          <version>0.8.6</version>
+		          <executions>
+		               <execution>
+				 
+				
 				
 		         </plugins>
 	         </plugins> 
