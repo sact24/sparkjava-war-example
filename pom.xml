@@ -83,8 +83,8 @@
         </execution>
     </executions>
  </plugin>
- </plugins>
-		<settings>
+     </plugins>
+		<setting>
                     <pluginGroups>
                        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
                     </pluginGroups>
