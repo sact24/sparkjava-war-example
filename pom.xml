@@ -58,6 +58,8 @@
 		</plugins>
 		         <groupId>org.jacoco</groupId>
 		         <artifactId>jacoco-maven-plugin</artifactId>
+		<plugin>
+		   <plugins>
 		         <version>0.7.9</version>
 		         <executions>
 				 <execution>
