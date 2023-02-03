@@ -85,11 +85,11 @@
  </plugin>
      </plugins>
 	 <settings>
-                    <pluginGroups>
+               <pluginGroups>
                        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
-                    </pluginGroups>
-                    <profiles>
-                      <profile>
+               </pluginGroups>
+               <profiles>
+                     <profile>
                          <id>sonar</id>
                          <activation>
                             <activeByDefault>true</activeByDefault>
