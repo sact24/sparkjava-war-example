@@ -84,12 +84,6 @@
     </executions>
  </plugin>
      </plugins>
-	  <pluginManagement>
-                    <groupId>org.sonarsource.scanner.maven</groupId>
-                    <artifactId>sonar-maven-plugin</artifactId>
-                    <version>8.9.10 </version>
-            </plugin>
-            </plugins>
 		  <project>
                          <groupId>org.sonarsource.scanner.maven</groupId>
                          <artifactId>sonar-maven-plugin</artifactId>
@@ -101,7 +95,7 @@
                              ${project.basedir}/../module-c/target/site/jacoco-aggregate/jacoco.xml
                         </sonar.coverage.jacoco.xmlReportPaths>
 			  <profiles>
-                     <profile>
+                   <profile>
                          <id>sonar</id>
                          <activation>
                             <activeByDefault>true</activeByDefault>
