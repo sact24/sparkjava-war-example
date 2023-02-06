@@ -84,25 +84,6 @@
     </executions>
  </plugin>
      </plugins>
-	 <settings>
-               <pluginGroups>
-                       <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
-               </pluginGroups>
-               <profiles>
-                     <profile>
-                         <id>sonar</id>
-                         <activation>
-                            <activeByDefault>true</activeByDefault>
-                         </activation>
-                         <properties>
-                             <!-- Optional URL to server. Default value is http://65.0.134.243:9000 -->
-                             <http://65.0.134.243:9000>
-                                http://http://65.0.134.243:9000
-                           </http://65.0.134.243:9000>
-                  </properties>
-                </profile>
-            </profiles>
-       <settings>
 				 
 				
 				
@@ -120,13 +101,27 @@
            </plugins>
 		 <project>
                          <groupId>org.sonarsource.scanner.maven</groupId>
-                         <artifactId>reactor</artifactId>
+                         <artifactId>sonar-maven-plugin</artifactId>
                          <packaging>pom</packaging>
+			 <version>8.9.10 </version>
 
                          <!-- Point the Sonar Qube Plugin always to the same aggregated JaCoCo report -->
                          <sonar.coverage.jacoco.xmlReportPaths>
                              ${project.basedir}/../module-c/target/site/jacoco-aggregate/jacoco.xml
                         </sonar.coverage.jacoco.xmlReportPaths>
+			  <profiles>
+                     <profile>
+                         <id>sonar</id>
+                         <activation>
+                            <activeByDefault>true</activeByDefault>
+                         </activation>
+                         <properties>
+                             <!-- Optional URL to server. Default value is http://65.0.134.243:9000 -->
+                             <http://65.0.134.243:9000>
+                                http://http://65.0.134.243:9000
+                           </http://65.0.134.243:9000>
+                  </properties>
+                </profile>
 
                      <modules>
                         <module>module-a</module>
