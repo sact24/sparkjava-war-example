@@ -117,8 +117,25 @@
                  <artifactId>sonar-maven-plugin</artifactId>
                  <version>8.9.10 </version>
             </plugin>
-         </plugins>
-       </pluginManagement>
+           </plugins>
+		 <project>
+                         <groupId>org.sonarsource.scanner.maven</groupId>
+                         <artifactId>reactor</artifactId>
+                         <packaging>pom</packaging>
+
+                         <!-- Point the Sonar Qube Plugin always to the same aggregated JaCoCo report -->
+                         <sonar.coverage.jacoco.xmlReportPaths>
+                             ${project.basedir}/../module-c/target/site/jacoco-aggregate/jacoco.xml
+                        </sonar.coverage.jacoco.xmlReportPaths>
+
+                     <modules>
+                        <module>module-a</module>
+                        <module>module-b</module>
+                        <module>module-c</module>
+             </modules>
+                <!-- ... more XML, like plugin management ... -->
+         </project>
+      </pluginManagement>
     </build>
   </project>         
 		         
