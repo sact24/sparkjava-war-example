@@ -55,7 +55,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		        <plugins>
+		        <plugin>
 				<properties>
                                      <!-- JaCoCo Properties -->
                                      <jacoco.version>0.8.6</jacoco.version>
