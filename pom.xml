@@ -84,7 +84,7 @@
     </executions>
      </plugin>
         </plugins>
-		  <project>
+		  
                          <groupId>org.sonarsource.scanner.maven</groupId>
                          <artifactId>sonar-maven-plugin</artifactId>
                          <packaging>pom</packaging>
