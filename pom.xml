@@ -84,21 +84,13 @@
     </executions>
  </plugin>
      </plugins>
-				 
-				
-		         
-	         
-	    </build>
-                 <build>
-                  <pluginManagement>
-                    <plugins>
-                       <plugin>
-                 <groupId>org.sonarsource.scanner.maven</groupId>
-                 <artifactId>sonar-maven-plugin</artifactId>
-                 <version>8.9.10 </version>
+	  <pluginManagement>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>8.9.10 </version>
             </plugin>
-           </plugins>
-		 <project>
+            </plugins>
+		  <project>
                          <groupId>org.sonarsource.scanner.maven</groupId>
                          <artifactId>sonar-maven-plugin</artifactId>
                          <packaging>pom</packaging>
