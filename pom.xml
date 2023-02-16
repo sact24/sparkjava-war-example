@@ -27,7 +27,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.6.3</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -38,7 +38,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>1.3.1</version>
+				<version>3.6.3</version>
 				<executions>
 					<execution>
 						<id>enforce-java</id>
@@ -48,7 +48,7 @@
 						<configuration>
 							<rules>
 								<requireJavaVersion>
-									<version>[1.8,)</version>
+									<version>[11.0.17,)</version>
 								</requireJavaVersion>
 							</rules>
 						</configuration>
